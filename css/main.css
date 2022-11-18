@@ -159,3 +159,170 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     /* places this specific item at the bottom of the grid */
     align-self: end;
 }
+
+#hero-welcome {
+    padding-bottom: 60px;
+}
+
+.title-line {
+    grid-column: 2/12;
+    border: none;
+    border-top: solid 3px #CF6666;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#hero-welcome p {
+    grid-column: 2/12;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 24px;
+
+}
+
+#hero-contact {
+    background-color: #f4f4f4;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.fa-mobile-alt {
+    grid-column: 3/4;
+}
+
+.fa-map-marker-alt {
+    grid-column: 7/8;
+}
+
+#hero-numbers {
+    grid-column: 4/7;
+}
+
+#hero-address {
+    grid-column: 8/11;
+}
+
+.fas {
+    font-size: 84px;
+    color: #9a2018;
+    margin: 0 auto;
+}
+
+/* 5. --- Why Couples Resort--- */
+
+#why nav {
+    height: 200px;
+    border-top: solid 3px #c3c3c3;
+    border-bottom: solid 3px #c3c3c3;
+}
+
+#why nav a {
+    font-size: 24px;
+    color: #000;
+}
+
+#why nav ul {
+    list-style-type: none;
+    grid-column: 2/11;
+    padding: 0;
+    margin-bottom: 40px;
+    align-self: end;
+}
+
+#why nav ul li {
+    display: inline;
+    margin-right: 55px;
+}
+
+#why nav ul li a.active {
+    border-bottom: 10px solid #9a2018;
+    padding-bottom: 30px;
+}
+
+#why nav ul li a:hover {
+    border-bottom: 10px solid #9a2018;
+    padding-bottom: 30px;
+}
+
+#why-hero {
+    height: 380px;
+    background: url(../images/why_choose_couples_resort.jpg) no-repeat bottom;
+}
+
+#why-hero h3 {
+    grid-column: 7/12;
+    align-self: end;
+}
+
+#why-options {
+    grid-row-gap: 30px;
+    margin-bottom: 110px;
+}
+
+#why-options .why-us-img {
+    /* this grid item will span 4 colums */
+    grid-column: span 4;
+}
+
+.why-us-img.selected {
+    background-color: #525151;
+    color: #fff;
+    padding: 20px 20px 0 20px; /*trbl*/
+    height: 350px;
+}
+
+.why-us-img h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.why-us-img h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.why-us-img p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+
+.why-us-img a {
+    color: #fff;
+}
+
+.why-us-img a:hover {
+    padding-bottom: 5px;
+    border-bottom: solid 2px #9a2018;
+}
+
+ /* 6. ---About & FAQ --- */
+
+ #about-hero {
+    height: 380px;
+    background: url(../images/hero-boats.jpg) no-repeat bottom;
+ }
+
+ #about-hero h2 {
+    grid-column: 2/7;
+    align-self: end;
+ }
+
+ #about-text-group1 {
+    grid-column: 2/7;
+ }
+
+ #about-text-group2 {
+    grid-column: 7/12;
+ }
+
+ #about-text {
+    margin-bottom: 60px;
+ }
+
+ #about-text p {
+    margin-bottom: 30px;
+    font-size: 20px;
+ }
