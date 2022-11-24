@@ -326,3 +326,202 @@ the grid using CSS. It is a class becasue we will use multiple grids */
     margin-bottom: 30px;
     font-size: 20px;
  }
+
+ .faq {
+    background-color: #f4f4f4;
+    padding: 64px 0 96px 0;
+ }
+
+ .faq h2 {
+    font-size: 24px;
+    grid-column: 2/-1;
+ }
+
+ .faq h2 span {
+    color: #9a2018;
+    font-size: 16px;
+ }
+
+ .faq-items {
+    grid-column: 2/12;
+    margin-bottom: 16px;
+ }
+
+ .faq-items h3 {
+    background-color: #e8e7e7;
+    padding: 16px;
+    font-size: 16px;
+ }
+
+ .faq-items ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+ }
+
+ .faq-items li {
+    padding: 8px 0; /* top&bottom, left&right */
+    border-bottom: 1px solid #9a2018;
+ }
+
+ .faq-items a {
+    color: inherit;
+ }
+
+ .faq-list-con {
+    display: grid;
+    grid-template-columns: repeat(10, 70px);
+    grid-column-gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+ }
+
+ #faq-list-group1 {
+    grid-column: 1/6;
+ }
+
+ #faq-list-group2 {
+    grid-column: 6/-1;
+}
+
+/* 7. ---Contact Form--- */
+
+#contact-form-hero {
+    height: 380px;
+    background: url(../images/hero_couple_contact.jpg) no-repeat bottom;
+}
+
+#contact-form-hero h2 {
+    grid-column: 7/12;
+    align-self: end;
+}
+
+#contact-form-text p {
+    grid-column: 2/12;
+    margin-bottom: 80px;
+}
+
+#contact-form-adress-left {
+    grid-column: 2/6;
+}
+
+#contact-form-fields-right {
+    grid-column: 6/12;
+}
+
+#contact-form-adress-left h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#contact-form-adress-left p {
+    margin-bottom: 20px;
+}
+
+#contact-form-fields-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 22px;
+    border: 2px solid #d6d6d6;
+    border-radius:  5px;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+    font: inherit;
+}
+
+#contact-form-fields-right textarea {
+    height: 300px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    padding: 16px 32px;
+    background-color: #9a2018;
+    color: #fff;
+    border: none;
+    transition: all 200ms ease-in;
+    align-self: flex-end;
+}
+
+input[type="submit"]:hover {
+    background-color: #626262;
+    border-radius: 0;
+}
+
+/* .8 --- Footer --- */
+
+#main-footer {
+    margin-top: 40px;
+    height: 533px;
+    background: url(../images/footer.jpg) no-repeat bottom;
+    color: #fff;
+    /* the grid auto rows proerty specifies the size of an implicitly created grid row track
+    
+    using min content shrinks the space used.
+
+    represents the largest minimal contribution of the grid items occupying the track
+    */
+    grid-auto-rows: min-content;
+}
+
+#main-footer-contact-info {
+    grid-column: 2/4;
+    margin-top: 100px;
+}
+
+#main-footer-contact-info h3 {
+    margin-bottom: 20px;
+}
+
+#main-footer-contact-info p {
+    font-size: 10px;
+    line-height: 26px;
+}
+
+#main-footer nav {
+    display: contents;
+    /* ignore the nav being a grid item, and make the contents grid items */
+}
+
+#footer-nav-group1 {
+    grid-column: 5/6;
+    margin-top: 100px;
+}
+
+#footer-nav-group2 {
+    grid-column:  6/7;
+    margin-top: 100px;
+}
+
+#main-footer nav a {
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#footer-book-now {
+    margin-top: 100px;
+    grid-column: 9/12;
+    background-color: #9a2018;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    transition: all 200ms ease-in;
+}
+
+#footer-book-now:hover {
+    background-color: #626262;
+}
+
+#main-footer hr {
+    margin-bottom: 30px;
+}
+
+#price-policy {
+    grid-column: 2/12;
+    font-size: 10px;
+    text-align: center;
+}
